@@ -1,0 +1,9 @@
+.vercel
+.env
+database.db
+.venv
+.__pycache__
+api/__pycache__/__init__.cpython-311.pyc
+api/__pycache__/index.cpython-311.pyc
+.__pycache__/main.cpython-311.pyc
+__pycache__/main.cpython-311.pyc
