@@ -7,7 +7,7 @@ from sqlmodel import SQLModel, Field, Session, create_engine, select
 
 load_dotenv()
 
-if(os.getenv("IS_LOCAL") == False):
+if(os.getenv("IS_LOCAL") == "False"):
     DATABASE_URL = os.getenv("POSTGRES_URL_NON_POOLING", "sqlite:///database.db")
     if DATABASE_URL.startswith("postgres://"):
         DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
